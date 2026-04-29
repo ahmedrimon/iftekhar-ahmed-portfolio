@@ -3,6 +3,15 @@ export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
+      animation: {
+        shine: "shine 0.8s ease-in-out",
+      },
+      keyframes:{
+        shine : {
+          "0%": { left: "-100%" },
+          "100%": { left: "100%" },
+        },
+      },
       fontFamily: {
         display: ['"Editorial New"', '"Playfair Display"', 'Georgia', 'serif'],
         sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
