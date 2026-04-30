@@ -2,8 +2,8 @@ export const projects = [
   {
     id: 1,
     num: '01',
-    title: 'DevBoard',
-    subtitle: 'Analytics Platform',
+    title: 'Icam Distribution',
+    subtitle: 'Ecommerce Platform',
     tags: ['React 18', 'TypeScript', 'WebSocket', 'Recharts'],
     year: '2024',
     type: 'SaaS',
@@ -24,7 +24,7 @@ export const projects = [
   {
     id: 3,
     num: '03',
-    title: 'Taskr',
+    title: 'Portfolio',
     subtitle: 'Productivity Suite',
     tags: ['React', 'React Query', 'Supabase', 'dnd-kit'],
     year: '2023',
@@ -35,7 +35,7 @@ export const projects = [
   {
     id: 4,
     num: '04',
-    title: 'DesignKit',
+    title: 'Earliest Website',
     subtitle: 'Open Source Library',
     tags: ['React', 'TypeScript', 'Radix UI', 'Storybook'],
     year: '2023',

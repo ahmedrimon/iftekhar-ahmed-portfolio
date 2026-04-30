@@ -84,7 +84,7 @@ export default function Hero() {
             className="max-w-md text-base md:text-lg font-sans font-light text-ink/60 leading-relaxed"
           >
             React developer crafting fast, beautiful, and scalable web
-            experiences. Based in Comilla, Bangladesh — available worldwide.
+            experiences.
           </p>
 
           <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4">
