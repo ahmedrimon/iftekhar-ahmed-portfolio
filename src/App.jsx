@@ -8,7 +8,7 @@ import Skills from './components/Skills'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import Cursor from './components/Cursor'
+// import Cursor from './components/Cursor'
 // import Shines from './components/Shines'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -44,7 +44,7 @@ export default function App() {
 
   return (
     <div className="noise">
-      <Cursor />
+      {/* <Cursor /> */}
       <Navbar />
       <main>
         {/* <Shines></Shines> */}

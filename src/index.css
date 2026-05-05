@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --paper: #f2f0eb;
-    --paper-2: #e8e5de;
+    --paper: #fff;
+    --paper-2: #fff;
     --ink: #0a0a0a;
-    --muted: #9a9590;
-    --accent: #c8b89a;
+    --muted: #FAF9F6;
+    --accent: #fff;
   }
 
   * {
@@ -27,7 +27,6 @@
     background: var(--paper);
     color: var(--ink);
     -webkit-font-smoothing: antialiased;
-    cursor: none;
   }
 
   /* Hide scrollbar but keep scroll */
@@ -37,27 +36,6 @@
 }
 
 @layer components {
-  /* Custom cursor */
-  .cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    background: var(--ink);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition: width 0.3s, height 0.3s, background 0.3s;
-    mix-blend-mode: difference;
-  }
-
-  .cursor.cursor--hover {
-    width: 60px;
-    height: 60px;
-    background: var(--ink);
-  }
 
   /* Clip text reveal */
   .clip-reveal {
