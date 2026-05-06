@@ -10,15 +10,25 @@ export default function Footer() {
       </div>
 
       <div className="flex items-center gap-8">
-        {['GitHub', 'LinkedIn', 'Twitter'].map((link) => (
-          <a
-            key={link}
-            href="#"
-            className="font-mono text-[10px] tracking-[0.2em] uppercase text-paper/30 hover:text-paper/70 transition-colors duration-200"
-          >
-            {link}
-          </a>
-        ))}
+        <a
+          href="https://github.com/ahmedrimon"
+          target="_blank"
+          className="font-mono text-[10px] tracking-[0.2em] uppercase text-paper/30 hover:text-paper/70 transition-colors duration-200"
+
+        >
+          Github
+        </a>
+
+        <a
+
+          href="https://www.linkedin.com/in/iftekhar--ahmed/"
+          target="_blank"
+          className="font-mono text-[10px] tracking-[0.2em] uppercase text-paper/30 hover:text-paper/70 transition-colors duration-200"
+
+        >
+          Linkedin
+        </a>
+
       </div>
 
       <span className="font-mono text-[10px] tracking-wider text-paper/20">

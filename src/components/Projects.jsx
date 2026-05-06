@@ -6,27 +6,27 @@ import { projects } from '../data'
 gsap.registerPlugin(ScrollTrigger)
 
 // Placeholder project preview using SVG
-function ProjectPreview({ project }) {
-  return (
-    <div
-      className="absolute right-0 top-1/2 -translate-y-1/2 w-[320px] h-[220px] pointer-events-none z-30 overflow-hidden"
-      style={{ background: project.color }}
-    >
-      <div className="w-full h-full flex flex-col items-center justify-center gap-3 p-8">
-        <span className="font-display font-bold text-4xl text-ink/20">{project.num}</span>
-        <span className="font-mono text-xs tracking-[0.3em] uppercase text-ink/40">{project.type}</span>
-        <div className="w-8 h-px bg-ink/20" />
-        <div className="flex flex-wrap gap-1.5 justify-center mt-1">
-          {project.tags.slice(0, 2).map((tag) => (
-            <span key={tag} className="text-[10px] font-mono tracking-wider uppercase px-2 py-0.5 border border-ink/10 text-ink/50">
-              {tag}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
-  )
-}
+// function ProjectPreview({ project }) {
+//   return (
+//     <div
+//       className="absolute right-0 top-1/2 -translate-y-1/2 w-[320px] h-[220px] pointer-events-none z-30 overflow-hidden"
+//       style={{ background: project.color }}
+//     >
+//       <div className="w-full h-full flex flex-col items-center justify-center gap-3 p-8">
+//         <span className="font-display font-bold text-4xl text-ink/20">{project.num}</span>
+//         <span className="font-mono text-xs tracking-[0.3em] uppercase text-ink/40">{project.type}</span>
+//         <div className="w-8 h-px bg-ink/20" />
+//         <div className="flex flex-wrap gap-1.5 justify-center mt-1">
+//           {project.tags.slice(0, 2).map((tag) => (
+//             <span key={tag} className="text-[10px] font-mono tracking-wider uppercase px-2 py-0.5 border border-ink/10 text-ink/50">
+//               {tag}
+//             </span>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   )
+// }
 
 function ProjectRow({ project, index }) {
   const [hovered, setHovered] = useState(false)
@@ -66,7 +66,10 @@ function ProjectRow({ project, index }) {
       onMouseLeave={() => setHovered(false)}
       data-cursor="View"
     >
-      <a href="#" className="block">
+      
+      {projects.map((project, id) => (
+        <a href={project.url} key={project.id}
+    target="_blank" className="block">
         <div className="flex items-center gap-6 md:gap-10 py-7 md:py-8 border-b border-ink/10 group-hover:border-ink/30 transition-colors duration-300 relative overflow-visible">
           {/* Number */}
           <span className="font-mono text-xs tracking-widest text-muted w-6 shrink-0">
@@ -108,15 +111,16 @@ function ProjectRow({ project, index }) {
           </span>
         </div>
       </a>
+      ))}
 
       {/* Hover preview */}
-      <div
+      {/* <div
         ref={previewRef}
         className="opacity-0 scale-95 pointer-events-none"
         style={{ position: 'absolute', right: '4rem', top: '50%', transform: 'translateY(-50%)' }}
       >
-        <ProjectPreview project={project} />
-      </div>
+        <ProjectPreview project={project}/>
+      </div> */}
     </div>
   )
 }
@@ -151,9 +155,10 @@ export default function Projects() {
 
       {/* Project list */}
       <div>
-        {projects.map((project, i) => (
-          <ProjectRow key={project.id} project={project} index={i} />
-        ))}
+        {/* {projects.map((project, i) => (
+        ))} */}
+        {/* <ProjectRow key={project.id} project={project} index={i} /> */}
+        <ProjectRow />
       </div>
 
       {/* View all */}

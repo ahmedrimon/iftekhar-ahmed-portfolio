@@ -57,10 +57,9 @@ export default function Contact() {
 
           <div className="space-y-0">
             {[
-              { label: 'Email', val: 'iftekhar@example.com', href: 'mailto:iftekhar@example.com' },
-              { label: 'GitHub', val: 'github.com/iftekharahmed', href: 'https://github.com' },
-              { label: 'LinkedIn', val: 'linkedin.com/in/iftekharahmed', href: 'https://linkedin.com' },
-              { label: 'Twitter', val: '@iftekharahmed', href: 'https://twitter.com' },
+              { label: 'Email', val: 'anonnoruddho@gmail.com', href: 'https://mail.google.com/anonnoruddho@gmail.com' },
+              { label: 'GitHub', val: 'github.com/ahmedrimon', href: 'https://github.com/ahmedrimon' },
+              { label: 'LinkedIn', val: 'linkedin.com/in/iftekhar--ahmed', href: 'https://www.linkedin.com/in/iftekhar--ahmed/' },
             ].map(({ label, val, href }) => (
               <a
                 key={label}

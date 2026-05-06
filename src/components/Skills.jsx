@@ -99,7 +99,7 @@ export default function Skills() {
           Also comfortable with
         </p>
         <div className="flex flex-wrap gap-3">
-          {['Git', 'Vite', 'Webpack', 'Storybook', 'Firebase', 'Supabase', 'PostgreSQL', 'Docker', 'Figma', 'Playwright'].map((tool) => (
+          {['Git', 'Vite', 'Webpack', 'Storybook', 'Firebase', 'Supabase', 'Figma', 'Playwright'].map((tool) => (
             <span
               key={tool}
               className="font-mono text-xs tracking-wider uppercase px-3.5 py-1.5 border border-paper/15 text-paper/50 hover:border-paper/40 hover:text-paper/80 transition-colors duration-200 cursor-default"

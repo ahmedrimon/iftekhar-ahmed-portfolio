@@ -9,6 +9,7 @@ export const projects = [
     type: 'SaaS',
     color: '#d4cfc8',
     description: 'Real-time developer analytics with GitHub integration, code review metrics, and team performance tracking for engineering teams of 5–500.',
+    url: 'https://icam-distribution.vercel.app/'
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ export const projects = [
     type: 'Productivity',
     color: '#cfc8d4',
     description: 'Real-time collaborative task manager with drag-and-drop boards, role-based access, and live presence indicators via WebRTC.',
+    url: 'https://iftekhar-portfolio-two.vercel.app/'
   },
   {
     id: 4,
@@ -60,23 +62,15 @@ export const skills = [
   { name: 'React / Next.js', level: 96 },
   { name: 'TypeScript', level: 90 },
   { name: 'Tailwind CSS', level: 94 },
-  { name: 'Node.js / Express', level: 80 },
+  { name: 'Node.js / Express', level: 40 },
   { name: 'GSAP / Animation', level: 85 },
-  { name: 'GraphQL / REST', level: 82 },
-  { name: 'Testing (Jest, RTL)', level: 78 },
   { name: 'Figma / Design', level: 75 },
 ]
 
 export const experience = [
   {
-    role: 'Senior Frontend Developer',
-    company: 'TechVentures Ltd.',
-    period: '2022 — Present',
-    desc: 'Lead React developer on a SaaS platform serving 50,000+ users. Improved Core Web Vitals by 40%, introduced a component library, mentored three junior developers.',
-  },
-  {
     role: 'React Developer',
-    company: 'Nexify Solutions',
+    company: 'Archaic Solutions',
     period: '2021 — 2022',
     desc: 'Built React frontends for fintech clients. Shipped eight production apps with TypeScript and Redux. Introduced end-to-end testing via Playwright.',
   },

@@ -103,7 +103,7 @@ export default function About() {
                 { label: 'Available', val: 'Worldwide · Remote' },
                 { label: 'Status', val: 'Open to work' },
                 { label: 'Primary stack', val: 'React · TypeScript' },
-                { label: 'Education', val: 'B.Sc. CSE, Comilla Univ.' },
+                { label: 'Education', val: 'Diploma In Engineering' },
                 { label: 'Certified', val: 'Meta React · AWS CP' },
               ].map(({ label, val }) => (
                 <div key={label} className="flex justify-between items-baseline py-4 border-b border-ink/10 last:border-0">
